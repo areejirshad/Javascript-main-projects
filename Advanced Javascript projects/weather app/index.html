@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="head">Your Weather App</div>
+        <div class="row">
+            <form id="weatherForm">
+                <select id="cityDropdown">
+                    <option value="">Select a city</option>
+                    <!-- Punjab -->
+                    <optgroup label="Punjab">
+                        <option value="Haveli Lakha">Haveli Lakha</option>
+                        <option value="pakpattan">pakpattan</option>
+                        <option value="Lahore">Lahore</option>
+                        <option value="Faisalabad">Faisalabad</option>
+                        <option value="Rawalpindi">Rawalpindi</option>
+                        <option value="Multan">Multan</option>
+                        <option value="Sialkot">Sialkot</option>
+                        <option value="Gujranwala">Gujranwala</option>
+                        <option value="Sargodha">Sargodha</option>
+                        <option value="Kasur">Kasur</option>
+                        <option value="Bahawalpur">Bahawalpur</option>
+                        <option value="Sheikhupura">Sheikhupura</option>
+                        <option value="Okara">Okara</option>
+                        <option value="Chiniot">Chiniot</option>
+                        <option value="Jhang">Jhang</option>
+                    </optgroup>
+                    <!-- Sindh -->
+                    <optgroup label="Sindh">
+                        <option value="Karachi">Karachi</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Sukkur">Sukkur</option>
+                        <option value="Larkana">Larkana</option>
+                        <option value="Mirpur Khas">Mirpur Khas</option>
+                        <option value="Nawabshah">Nawabshah</option>
+                        <option value="Jacobabad">Jacobabad</option>
+                        <option value="Thatta">Thatta</option>
+                    </optgroup>
+                    <!-- Khyber Pakhtunkhwa (KPK) -->
+                    <optgroup label="Khyber Pakhtunkhwa">
+                        <option value="Peshawar">Peshawar</option>
+                        <option value="Mardan">Mardan</option>
+                        <option value="Abbottabad">Abbottabad</option>
+                        <option value="Swat">Swat</option>
+                        <option value="Kohat">Kohat</option>
+                        <option value="Dera Ismail Khan">Dera Ismail Khan</option>
+                        <option value="Chitral">Chitral</option>
+                        <option value="Bannu">Bannu</option>
+                    </optgroup>
+                    <!-- Balochistan -->
+                    <optgroup label="Balochistan">
+                        <option value="Quetta">Quetta</option>
+                        <option value="Gwadar">Gwadar</option>
+                        <option value="Turbat">Turbat</option>
+                        <option value="Khuzdar">Khuzdar</option>
+                        <option value="Chaman">Chaman</option>
+                        <option value="Zhob">Zhob</option>
+                        <option value="Loralai">Loralai</option>
+                    </optgroup>
+                    <!-- Azad Kashmir -->
+                    <optgroup label="Azad Kashmir">
+                        <option value="Muzaffarabad">Muzaffarabad</option>
+                        <option value="Mirpur">Mirpur</option>
+                        <option value="Kotli">Kotli</option>
+                        <option value="Bagh">Bagh</option>
+                        <option value="Rawalakot">Rawalakot</option>
+                    </optgroup>
+                    <!-- Gilgit-Baltistan -->
+                    <optgroup label="Gilgit-Baltistan">
+                        <option value="Gilgit">Gilgit</option>
+                        <option value="Skardu">Skardu</option>
+                        <option value="Hunza">Hunza</option>
+                        <option value="Ghanche">Ghanche</option>
+                        <option value="Diamer">Diamer</option>
+                    </optgroup>
+                </select>
+            </form>
+        </div>
+        <div class="row" id="weather">
+            <!-- Weather information will be displayed here -->
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
